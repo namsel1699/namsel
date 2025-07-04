@@ -2,9 +2,48 @@
 <html>
   <head>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <p>This map shows a sample trace of key locations.</p>
-    <div id="map"></div>
+    <script src=script.js></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <title>This is the &lt;title&gt; — It shows up on the browser tab</title>
+  </head>
+  <body>
+    <h1>&lt;h1&gt; This is a Heading Tag</h1>
+
+    <p>&lt;p&gt; This is a paragraph tag. It is used for regular text content on a web page.</p>
+
+    <ul>
+      <li>&lt;ul&gt; creates an unordered list:</li>
+      <li>&lt;li&gt; Each &lt;li&gt; is a list item</li>
+    </ul>
+
+    <a href="https://tibetanjournal.com" target="_blank">&lt;a&gt; This is a link tag — it goes to another webpage</a>
+
+    <br><br>
+
+    <img src="one-monastery.jpg" alt="Example Image" width="200">
+    <p>&lt;img&gt; displays an image. The <code>src</code> attribute is the image URL.</p>
+
+    </button>
+    <p>And JavaScript adds interactivity. This button shows an alert.</p>
+      <h1>My Journey Map</h1>
+        <p>This map shows a sample trace of key locations.</p>
+          <div id="map"></div>
+
+       <h1>This is a &lt;script&gt; tag example</h1>
+    <p>Click the button to enter your name and see JavaScript in action!</p>
+
+    <button onclick="greetUser()">I will say Tashi Delek to your visior</button>
+    <script>
+      // This function runs when the button is clicked
+      function greetUser() {
+        let name = prompt("What's your name? \n ཁྱེད་རང་གི་མིང་ལ་ག་རེ་རེད།");
+        if (name) {
+          alert("Tashi Delek བཀྲ་ཤིས་བདེ་ལེགས།, " + name + "! 👋");
+        } else {
+          alert("You didn't enter a name.");
+        }
+      }
+    </script>
+  </body>
 </html>
-</body>
