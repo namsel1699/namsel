@@ -15,5 +15,4 @@
           alert("You didn't enter a name.");
         }
       }
-  <linl rel="https://unpkg.com/leaflet/dist/leaflet.js"></script>    
   </script>
