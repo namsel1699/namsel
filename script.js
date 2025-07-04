@@ -1,6 +1,5 @@
  </script>
   </button>
-    <p>And JavaScript adds interactivity. This button shows an alert.</p>
        <h1>This is a &lt;script&gt; tag example</h1>
     <p>Click the button to enter your name and see JavaScript in action!</p>
 
