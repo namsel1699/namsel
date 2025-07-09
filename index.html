@@ -3,6 +3,37 @@
   <head>
     <title>Journey Home</title>
   </head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaflet Map Example</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <style>
+        #map {
+            height: 400px; /* Adjust the height as needed */
+            width: 100%;   /* Full width of the container */
+        }
+    </style>
+</head>
+<body>
+
+<!-- The map container -->
+<div id="map"></div>
+
+<!-- Your scripts should go at the end of the body -->
+<script>
+    // Initialize the map and set its view to a chosen geographical point and zoom level
+    var map = L.map('map').setView([27.9881, 86.9250], 13); // Everest Base Camp coordinates as an example
+
+    // Set up the tile layer - you can use a variety of providers (like OpenStreetMap)
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+</script>
 </button>
       <h1>My Journey Map</h1>
         <p>This map shows a sample trace of key locations.</p>
