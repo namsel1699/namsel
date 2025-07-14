@@ -8,8 +8,8 @@
         }
       }
       */
-// Initialize the map centered near Yumbhu Lhakhang
-  // Initialize the map centered between Lhoka and Lhasa
+// Initialize the map centered near Guirong Valley
+  // Initialize the map centered between Charleston and University of Baffalo
   const map = L.map('map').setView([30.5, 85], 5);
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -23,7 +23,7 @@
 
   const storyPanel = document.getElementById('story-panel');
 
-  // Marker for Yumbhu Lhakhang
+  // Marker for Guirong Valley
   L.marker(GuirongValley).addTo(map)
     .bindPopup("📍 Guirong Valley")
     .on('click', () => {
@@ -33,7 +33,7 @@
       `;
     });
 
-  // Marker for Lhasa
+  // Marker for University of Baffalo
   L.marker(UniversityofBaffalo).addTo(map)
     .bindPopup("📍 Univarsity of Baffalo")
     .on('click', () => {
@@ -42,7 +42,7 @@
         <p><strong>University of Baffalo</strong>is the place where Dorjee studied Computer Science. It was the school, that changed his life from the very bottom.</p>
       `;
     });
-    // Marker for Dharamsala
+    // Marker for Charleston
       L.marker(Charleston).addTo(map)
         .bindPopup("📍 Charleston")
         .on('click', () => {
