@@ -16,42 +16,42 @@
     attribution: '&copy; OpenStreetMap contributors'
   }).addTo(map);
 
-  const yumbhulhagang = [29.2333, 91.7667];
-  const lhasa = [29.6578, 91.1175];
-  const dharamsala = [32.2207, 76.3203]; 
+  const Guirong Valley = [38.57787, -110.7077];
+  const University of Baffalo = [43.001, -78.790 ];
+  const Charlestona = [39.288990, -77.859718 ]; 
 
 
   const storyPanel = document.getElementById('story-panel');
 
   // Marker for Yumbhu Lhakhang
-  L.marker(yumbhulhagang).addTo(map)
-    .bindPopup("📍 Lhokha")
+  L.marker(GuirongValley).addTo(map)
+    .bindPopup("📍 Guirong Valley")
     .on('click', () => {
       storyPanel.innerHTML = `
-        <h2>📖 Lhokha</h2>
-        <p><strong>Yumbhu Lhakhang</strong> is Tibet’s first palace, said to be built for King Nyatri Tsenpo in the 2nd century BCE. It marks the legendary beginning of Tibetan kingship in the Yarlung Valley. Perched on a hill, it later became a shrine and monastery during the reign of the 5th Dalai Lama.</p>
+        <h2>📖 Guirong Valley </h2>
+        <p><strong>Guirong Valley</strong> is the birthplace of Dorjee. He wasborn and raised there and lived happliy with his parents. Now this place is the boarderline between Nepal and China, after the China's Occupation.</p>
       `;
     });
 
   // Marker for Lhasa
-  L.marker(lhasa).addTo(map)
-    .bindPopup("📍 Lhasa")
+  L.marker(UniversityofBaffalo).addTo(map)
+    .bindPopup("📍 Univarsity of Baffalo")
     .on('click', () => {
       storyPanel.innerHTML = `
-        <h2>📖 Lhasa</h2>
-        <p><strong>Lhasa</strong> became the capital of Tibet during the 7th century under King Songtsen Gampo. With the construction of the Potala Palace and Jokhang Temple, it evolved into the center of Tibetan political power and Buddhist life — a place of unification and pilgrimage.</p>
+        <h2>📖 University of Baffalo </h2>
+        <p><strong>University of Baffalo</strong>is the place where Dorjee studied Computer Science. It was the school, that changed his life from the very bottom.</p>
       `;
     });
     // Marker for Dharamsala
-      L.marker(dharamsala).addTo(map)
-        .bindPopup("📍 Dharamshala")
+      L.marker(Charleston).addTo(map)
+        .bindPopup("📍 Charleston")
         .on('click', () => {
           storyPanel.innerHTML = `
-            <h2>📖 Dharamshala</h2>
-            <p>After the 1959 uprising in Lhasa, His Holiness the 14th Dalai Lama fled Tibet and found refuge in Dharamsala, India. There, the Tibetan Government-in-Exile was established — not just as a political structure, but as a cultural lifeline. In this Himalayan town, Tibetans rebuilt schools, monasteries, and institutions to preserve their language, religion, and identity. Though far from their homeland, Dharamsala has become the third symbolic capital of Tibet — a place where memory, resilience, and hope continue to thrive. </p>
+            <h2>📖 Charleston</h2>
+            <p>After finding out about Chinese taking his parents, he moved to Charleston. There he used Computer Science toconnect with many work with them, and save other Childern all around the world who are suffering.</p>
           `;
         });
-  const path = L.polyline([yumbhulhagang, lhasa, dharamsala], {
+  const path = L.polyline([GuirongValley,UniversityofBaffalo, Charleston], {
     color: 'red',
     weight: 4
   }).addTo(map);
