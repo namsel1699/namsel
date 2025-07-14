@@ -16,7 +16,7 @@ body {
 }
 /* Header Section */
 .site-header {
-  background-color: #FFC1CC;
+  background-color: #3498db;
   color: white;
   padding: 30px 20px;
   text-align: center;
@@ -34,7 +34,7 @@ body {
 .site-header .subtitle {
   margin-top: 8px;
   font-size: 1.1em;
-  color: #000000;
+  color: #ecf0f1;
 }
 /* Headings */
 h1 {
@@ -229,4 +229,5 @@ img {
   font-size: 0.95rem;
   margin-top: 15px;
   color: #666;
+}
 }
