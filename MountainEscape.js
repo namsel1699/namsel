@@ -32,15 +32,15 @@ const totalLevels = 6;
 let restartButton;
 
 function preload() {
-  img = loadImage('Mountain.gif');
-  playerImg = loadImage('Dorjee.gif');
-  startScreenImg = loadImage('Sky.gif');
-  //obstacleImg = loadImage('Lynx.gif');
-  heartImg = loadImage('Heart.gif');
-  chaserImg = loadImage('Police.gif');
+  img = loadImage("images/Mountain.gif");
+  playerImg = loadImage("images/Dorjee.gif");
+  startScreenImg = loadImage("images/Sky.gif");
+  //obstacleImg = loadImage("images,Lynx.gif");
+  heartImg = loadImage("images/Heart.gif");
+  chaserImg = loadImage("images/Police.gif");
   obstacleImgs = {
-  1: loadImage('Lynx.gif'),
-  2: loadImage('fox.gif')
+  1: loadImage("images/Lynx.gif"),
+  2: loadImage("images,fox.gif")
   };
   
   
@@ -48,7 +48,8 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(706, 675);
+  let cv = createCanvas(706, 675);
+  cv.parent ('game')
   goal = createVector(630, 30);
   player = new Player(65, 620);
   chaser = new AI(50, 50);
