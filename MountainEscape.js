@@ -44,7 +44,7 @@ function preload() {
   };
   
   
-  bgMusic = loadSound('Takedown.m4a');
+  bgMusic = loadSound("music/Takedown.m4a");
 }
 
 function setup() {
