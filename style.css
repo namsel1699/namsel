@@ -16,8 +16,8 @@ body {
 }
 /* Header Section */
 .site-header {
-  background-color: #7F00FF;
-  color: ;
+  background-color: #FFC1CC;
+  color: white;
   padding: 30px 20px;
   text-align: center;
   border-bottom: 4px solid #2980b9;
@@ -229,4 +229,5 @@ img {
   font-size: 0.95rem;
   margin-top: 15px;
   color: #666;
+}
 }
