@@ -61,7 +61,7 @@ function setup() {
     new Platform(60 + 150, 645 - 45, 150, 45),
     new Platform(210 + 150, 600 - 45, 150, 45),
     new Platform(360 + 150, 555 - 45, 150, 45),
-    new Platform(510 + 150, 510 - 45, 150, 45),
+   
     new Platform(210 + 230, 600 - 200, 150, 45),
     new Platform(60 + 230, 555 - 200, 150, 45),
     new Platform(370 - 230, 510 - 200, 150, 45),
