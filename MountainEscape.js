@@ -30,7 +30,7 @@ let gameOver = false;
 const totalLevels = 6;
 
 let restartButton;
-
+let bgMusic;
 function preload() {
   img = loadImage("images/Mountain.gif");
   playerImg = loadImage("images/Dorjee.gif");
@@ -40,7 +40,7 @@ function preload() {
   chaserImg = loadImage("images/Police.gif");
   obstacleImgs = {
   1: loadImage("images/Lynx.gif"),
-  2: loadImage("images,fox.gif")
+  2: loadImage("images/fox.gif"),
   };
   
   
