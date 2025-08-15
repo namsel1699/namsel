@@ -44,7 +44,7 @@ function preload() {
   };
   
   
-  bgMusic = loadSound("music/Takedown.m4a");
+  //bgMusic = loadSound("music/Takedown.m4a");
 }
 
 function setup() {
@@ -237,10 +237,10 @@ function drawEndScreen() {
 function mousePressed() {
   if (gameState === "start") {
     gameState = "play";
-     if (!bgMusic.isPlaying()) {
+     /*if (!bgMusic.isPlaying()) {
       bgMusic.loop();  // Loop the music
       bgMusic.setVolume(0.2); // Volume between 0.0 and 1.0
-    }
+    }*/
   } else if (gameState === "win" || gameState === "end") {
     restartGame();
   }
